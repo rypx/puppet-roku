@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Puppeteer on Heroku with WSEndpoint testing",
   "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
   "repository": "https://github.com/rypx/puppet-roku.git",
   "author": "rypx <ryuipx@gmail.com>",
   "license": "MIT",
