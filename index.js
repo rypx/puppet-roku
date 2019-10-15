@@ -54,7 +54,7 @@ const StartServer = async () => {
 		.all('/', (req, res) => {
 			res.json({
 				ws: Browser[0].replace('127.0.0.1', req.hostname),
-				url: `http://` + Browser[0].split('/')[2]
+				url: `http://` + Browser[0].replace('127.0.0.1', req.hostname).split('/')[2]
 			})
 		})
 		.listen(process.env.PORT || 80 || 3000, () => console.log('[ # ] Server is Online.'))
